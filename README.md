@@ -1,14 +1,14 @@
-# Equalizer
+# Task 3 Equalizer Studio
 
 <IMG SRC="gif/Animation.gif">
 <br>
 
-# team members 
+# Team 5 Members
   
-| N             | Name          |
-| ------------- | ------------- |
-| 1             | Osamah Faisal |
-| 2             |   Abram Gad   |
-| 3             |  Mahmoud Hamdy|
-| 4             |  MariamTurky  |
+|       N       |      Name       |
+| ------------- | -------------   |
+| 1             |  Ahmed Tarek    |
+| 2             |  Ammar Yasser   |
+| 3             |  Hanan Tawfik   |
+| 4             |  Mohamed Hamed  |
   
