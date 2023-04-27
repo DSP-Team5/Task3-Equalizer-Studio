@@ -1,0 +1,155 @@
+.block-container.css-12oz5g7.egzxvld2 {
+    max-width: 90%;
+    padding: 0;
+}
+
+.css-u8hs99.exg6vvm14 {
+    display: none;
+}
+
+[data-testid="stFileUploadDropzone"] {
+    background-color: transparent;
+    padding: 0;
+    max-width: 150px;
+}
+
+[data-testid="stFileUploadDropzone"] button {
+    font-size: auto;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+[data-testid="stFileUploader"] {
+    margin-top: 11px;
+}
+
+[data-testid="stFileUploader"] label {
+    display: none;
+}
+
+.row-widget.stRadio .css-k3w14i.effi0qh3 {
+    display: none;
+}
+
+.row-widget.stRadio .css-81oif8.effi0qh3 {
+    display: none;
+}
+
+
+[role="radiogroup"] {
+    margin-top: 15px;
+    margin-left: 30px;
+
+}
+
+
+.row-widget.stRadio label:not(:last-of-type) {
+    margin-top: 5px;
+}
+
+.css-1lsmgbg.egzxvld0 {
+    display: none;
+}
+
+
+
+/* @media (max-width:805px) {
+
+
+    [data-testid="stFileUploadDropzone"] button {
+        font-size: 15px;
+        font-weight: 300;
+
+    }
+}
+
+@media (max-width:765px) {
+
+
+    [data-testid="stFileUploadDropzone"] button {
+        font-size: 13px;
+        font-weight: 200;
+
+    }
+}
+
+@media (max-width:650px) {
+
+
+    [data-testid="stFileUploadDropzone"] button {
+        font-size: 13px;
+        font-weight: 200;
+        margin-top: 10px;
+
+    }
+
+    .row-widget.stRadio label {
+        margin-left: 10px;
+    }
+} */
+
+footer {
+    display: none;
+}
+
+* {
+    user-select: none;
+}
+
+[data-testid="stMarkdownContainer"] p{
+    margin-left: 10px;
+}
+.css-hxt7ib.e1fqkh3o4{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    padding-left: 5px;
+}
+[data-testid="stSidebar"]{
+    max-width: 15%;
+    max-height: 70%;
+    background-color: transparent;
+    overflow: hidden;}
+.row-widget.stButton{
+max-width: 30px !important;
+}
+.element-container.css-1np2sqp.e1tzin5v3{
+    max-width: 30px !important; 
+}
+.css-46089q.e1tzin5v0{
+    max-width: 30px !important; 
+   margin-left: 10px;
+}
+.page_titel{
+    font-size: 50px;
+    position: absolute;
+    left: calc(50% - 300px);
+    transform: translateY(300px);
+}
+[data-testid="stArrowVegaLiteChart"]{
+    max-height: 100px;
+}
+[data-testid="stHeader"]{
+    display: none;
+}
+[data-testid="stMarkdownContainer"]{
+    text-align: center;
+    /* margin-top: -70px; */
+}
+iframe{
+    margin-top: -30px;
+}
+[data-testid="stMarkdownContainer"] p:not(.before , .after , .error){
+    margin-top: -70px;
+}
+.before , .after{
+    font-size: x-large;
+    margin-top: 0px;
+}
+.error{
+    background-color: rgba(255, 43, 43, 0.09);
+    font-size: larger;
+}
+.css-1q1n0ol.egzxvld0{
+    display: none;
+}
