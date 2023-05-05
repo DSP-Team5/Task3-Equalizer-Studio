@@ -36,7 +36,6 @@ startIndex =[]
 samplfreq=0
 lines1=any
 optional =  False
-
 # -------------------------------------------------------------------------------------------------------------#
 file_uploaded = st.sidebar.file_uploader("")
 
@@ -61,13 +60,16 @@ else:
 if (radio_button == "Music" or radio_button == "Normal" or radio_button == "Vowels" or radio_button =="Optional"):
   
     if type=="audio/wav":
-        signal_data, sample_rate = sf.read(name)
-        df = pd.DataFrame({'time': np.arange(len(signal_data)) / sample_rate, 'amplitude': signal_data}, columns=['time', 'amplitude'])
+        signal_x_axis_before, signal_y_axis_before, sample_rate_before ,sound_info_before = animation.read_audio(name)
+        df = pd.DataFrame({'time': signal_x_axis_before[::500], 'amplitude': signal_y_axis_before[:: 500]}, columns=['time', 'amplitude'])
         lines = alt.Chart(df).mark_line().encode( x=alt.X('time', axis=alt.Axis(title='time')),
                                                 y=alt.Y('amplitude', axis=alt.Axis(title='amplitude'))).properties(width=500,height=200)
-        magnitude , freq= np.abs(np.fft.fft(signal_data)), np.fft.fftfreq(len(signal_data), d=1/sample_rate)
-        points_per_freq = np.ceil(len(freq) / (sample_rate / 2) )  # number of points per  frequancy 
+        # st.write(file_uploaded)
+        samplfreq, audio = wavfile.read(name)  
+        magnitude , freq=fn.fourierTansformWave(audio ,samplfreq)  
+        points_per_freq = np.ceil(len(freq) / (samplfreq / 2) )  # number of points per  frequancy 
         points_per_freq = int(points_per_freq) # convert to fft
+
         if radio_button == "Normal":
             max_freq = np.max(freq)  # get the maximum frequency of the audio file
             num_bins = 10  # replace with the number of bins you want to create
