@@ -7,6 +7,7 @@ from scipy.io.wavfile import write
 from scipy.io import wavfile
 from scipy.fft import irfft
 import numpy as np
+import numpy.fft as fft
 import librosa.display
 import matplotlib.pyplot as plt
 import plotly_express as px
@@ -68,19 +69,29 @@ if (radio_button == "Music" or radio_button == "Normal" or radio_button == "Vowe
         magnitude , freq=fn.fourierTansformWave(audio ,samplfreq)  
         points_per_freq = np.ceil(len(freq) / (samplfreq / 2) )  # number of points per  frequancy 
         points_per_freq = int(points_per_freq) # convert to fft
+
         if radio_button == "Normal":
-            label= ["{}Hz".format(500),"{}Hz".format(1000),"{}Hz".format(1500),"{}Hz".format(2000),"{}Hz".format(2500),"{}Hz".format(3000),"{}Hz".format(3500),"{}Hz".format(4000),"{}Hz".format(4500),"{}Hz".format(5000)]
+            max_freq = np.max(freq)  # get the maximum frequency of the audio file
+            num_bins = 10  # replace with the number of bins you want to create
+            bin_width = max_freq / num_bins
+            label = []
+            for i in range(num_bins):
+                start_freq = i * bin_width
+                end_freq = (i + 1) * bin_width
+                label.append("{}Hz - {}Hz".format(round(start_freq, 2), round(end_freq, 2)))
             # read file          
-            sliders =fn.creating_new_slider(label)
-            normalIndex , numofPoints =fn.bandLength(freq)  # get index of slider in how point will change when move slider 
-            for i in range(10):
-                if i<9: 
-                    numpoints.append(int(numofPoints/2))
+            sliders = fn.creating_new_slider(label)
+            normalIndex, numofPoints = fn.bandLength(freq)  # get index of slider in how point will change when move slider 
+            numpoints = []
+            startIndex = []
+            for i in range(num_bins):
+                if i < num_bins - 1:
+                    numpoints.append(int(numofPoints / 2))
                 else:
-                    numofPoints=(numofPoints/2)*9 +numofPoints
+                    numofPoints = (numofPoints / 2) * (num_bins - 1) + numofPoints
                     numpoints.append(int(numofPoints))
-                startIndex.append(int(normalIndex[i]/2))
-            print("This is ",numofPoints)
+                startIndex.append(int(i * bin_width / max_freq * len(freq)))
+            print("This is ", numofPoints)
             # numpoints = int(numofPoints)
 #------------------------------------ MUSIC -----------------------------------------
 
