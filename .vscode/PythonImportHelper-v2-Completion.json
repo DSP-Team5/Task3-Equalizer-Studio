@@ -1,0 +1,599 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "write",
+        "importPath": "scipy.io.wavfile",
+        "description": "scipy.io.wavfile",
+        "isExtraImport": true,
+        "detail": "scipy.io.wavfile",
+        "documentation": {}
+    },
+    {
+        "label": "write",
+        "importPath": "scipy.io.wavfile",
+        "description": "scipy.io.wavfile",
+        "isExtraImport": true,
+        "detail": "scipy.io.wavfile",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.signal",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.signal",
+        "description": "scipy.signal",
+        "detail": "scipy.signal",
+        "documentation": {}
+    },
+    {
+        "label": "find_peaks",
+        "importPath": "scipy.signal",
+        "description": "scipy.signal",
+        "isExtraImport": true,
+        "detail": "scipy.signal",
+        "documentation": {}
+    },
+    {
+        "label": "wave",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wave",
+        "description": "wave",
+        "detail": "wave",
+        "documentation": {}
+    },
+    {
+        "label": "IPython.display",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "IPython.display",
+        "description": "IPython.display",
+        "detail": "IPython.display",
+        "documentation": {}
+    },
+    {
+        "label": "librosa",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "librosa",
+        "description": "librosa",
+        "detail": "librosa",
+        "documentation": {}
+    },
+    {
+        "label": "librosa.display",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "librosa.display",
+        "description": "librosa.display",
+        "detail": "librosa.display",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "altair",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "altair",
+        "description": "altair",
+        "detail": "altair",
+        "documentation": {}
+    },
+    {
+        "label": "pylab",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pylab",
+        "description": "pylab",
+        "detail": "pylab",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "HIDDEN",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "HIDDEN",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit_vertical_slider",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit_vertical_slider",
+        "description": "streamlit_vertical_slider",
+        "detail": "streamlit_vertical_slider",
+        "documentation": {}
+    },
+    {
+        "label": "functions",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "functions",
+        "description": "functions",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "wavfile",
+        "importPath": "scipy.io",
+        "description": "scipy.io",
+        "isExtraImport": true,
+        "detail": "scipy.io",
+        "documentation": {}
+    },
+    {
+        "label": "wavfile",
+        "importPath": "scipy.io",
+        "description": "scipy.io",
+        "isExtraImport": true,
+        "detail": "scipy.io",
+        "documentation": {}
+    },
+    {
+        "label": "wavfile",
+        "importPath": "scipy.io",
+        "description": "scipy.io",
+        "isExtraImport": true,
+        "detail": "scipy.io",
+        "documentation": {}
+    },
+    {
+        "label": "irfft",
+        "importPath": "scipy.fft",
+        "description": "scipy.fft",
+        "isExtraImport": true,
+        "detail": "scipy.fft",
+        "documentation": {}
+    },
+    {
+        "label": "rfft",
+        "importPath": "scipy.fft",
+        "description": "scipy.fft",
+        "isExtraImport": true,
+        "detail": "scipy.fft",
+        "documentation": {}
+    },
+    {
+        "label": "rfftfreq",
+        "importPath": "scipy.fft",
+        "description": "scipy.fft",
+        "isExtraImport": true,
+        "detail": "scipy.fft",
+        "documentation": {}
+    },
+    {
+        "label": "irfft",
+        "importPath": "scipy.fft",
+        "description": "scipy.fft",
+        "isExtraImport": true,
+        "detail": "scipy.fft",
+        "documentation": {}
+    },
+    {
+        "label": "fft",
+        "importPath": "scipy.fft",
+        "description": "scipy.fft",
+        "isExtraImport": true,
+        "detail": "scipy.fft",
+        "documentation": {}
+    },
+    {
+        "label": "fftshift",
+        "importPath": "scipy.fft",
+        "description": "scipy.fft",
+        "isExtraImport": true,
+        "detail": "scipy.fft",
+        "documentation": {}
+    },
+    {
+        "label": "numpy.fft",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy.fft",
+        "description": "numpy.fft",
+        "detail": "numpy.fft",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "plotly_express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly_express",
+        "description": "plotly_express",
+        "detail": "plotly_express",
+        "documentation": {}
+    },
+    {
+        "label": "animation",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "animation",
+        "description": "animation",
+        "detail": "animation",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.graph_objects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.graph_objects",
+        "description": "plotly.graph_objects",
+        "detail": "plotly.graph_objects",
+        "documentation": {}
+    },
+    {
+        "label": "soundfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "soundfile",
+        "description": "soundfile",
+        "detail": "soundfile",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.express",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.express",
+        "description": "plotly.express",
+        "detail": "plotly.express",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "signal",
+        "importPath": "scipy",
+        "description": "scipy",
+        "isExtraImport": true,
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit.components.v1",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit.components.v1",
+        "description": "streamlit.components.v1",
+        "detail": "streamlit.components.v1",
+        "documentation": {}
+    },
+    {
+        "label": "variabl",
+        "kind": 6,
+        "importPath": "animation",
+        "description": "animation",
+        "peekOfCode": "class variabls :\n    points_num =1000\n    count=0\ndef read_audio(audio_file):\n    obj = wave.open(audio_file, 'r')\n    sample_rate   = obj.getframerate()                           # number of samples per second\n    n_samples     = obj.getnframes()                             # total number of samples in the whole audio\n    signal_wave   = obj.readframes(-1)                           # amplitude of the sound\n    duration      = n_samples / sample_rate                      # duration of the audio file\n    sound_info    = pylab.fromstring(signal_wave, 'int16')",
+        "detail": "animation",
+        "documentation": {}
+    },
+    {
+        "label": "read_audio",
+        "kind": 2,
+        "importPath": "animation",
+        "description": "animation",
+        "peekOfCode": "def read_audio(audio_file):\n    obj = wave.open(audio_file, 'r')\n    sample_rate   = obj.getframerate()                           # number of samples per second\n    n_samples     = obj.getnframes()                             # total number of samples in the whole audio\n    signal_wave   = obj.readframes(-1)                           # amplitude of the sound\n    duration      = n_samples / sample_rate                      # duration of the audio file\n    sound_info    = pylab.fromstring(signal_wave, 'int16')\n    signal_y_axis = np.frombuffer(signal_wave, dtype=np.int16)\n    signal_x_axis = np.linspace(0, duration, len(signal_y_axis))\n    return signal_x_axis, signal_y_axis, sample_rate,  sound_info",
+        "detail": "animation",
+        "documentation": {}
+    },
+    {
+        "label": "plot_animation",
+        "kind": 2,
+        "importPath": "animation",
+        "description": "animation",
+        "peekOfCode": "def plot_animation(df):\n    brush = alt.selection_interval()\n    lines = alt.Chart(df).mark_line().encode(\n        x=alt.X('time', axis=alt.Axis(title='time')),\n        y=alt.Y('amplitude', axis=alt.Axis(title='amplitude')),\n    ).properties(\n        width=500,\n        height=200\n    ).add_selection(\n        brush).interactive()",
+        "detail": "animation",
+        "documentation": {}
+    },
+    {
+        "label": "numpoints",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "numpoints = []\nstartIndex =[]\nsamplfreq=0\nlines1=any\noptional =  False\n# -------------------------------------------------------------------------------------------------------------#\nfile_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Optional\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "optional",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "optional =  False\n# -------------------------------------------------------------------------------------------------------------#\nfile_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Optional\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "file_uploaded",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "file_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Optional\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif file_uploaded==None:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "radio_button",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "radio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Optional\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif file_uploaded==None:\n    # welcome_text = '<p class=\"page_titel\", style=\"font-family:Arial\">Please upload file </p>'",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "sample_rate",
+        "kind": 5,
+        "importPath": "createSignal",
+        "description": "createSignal",
+        "peekOfCode": "sample_rate = 880  # Sample rate (Hz)\nduration = 5  # Duration of the audio signal (seconds)\nfrequency = 440  # Frequency of the sinusoidal waveform (Hz)\n# Generate the time array\nt = np.linspace(0, duration, int(sample_rate * duration))\n# Generate the audio signal (sinusoidal waveform)\naudio_signal = np.sin(2 * np.pi * frequency * t)\n# Scale the audio signal to the appropriate range (-32768 to 32767 for 16-bit WAV)\nscaled_audio_signal = np.int16(audio_signal * 32767)\n# Save the audio signal as a WAV file",
+        "detail": "createSignal",
+        "documentation": {}
+    },
+    {
+        "label": "duration",
+        "kind": 5,
+        "importPath": "createSignal",
+        "description": "createSignal",
+        "peekOfCode": "duration = 5  # Duration of the audio signal (seconds)\nfrequency = 440  # Frequency of the sinusoidal waveform (Hz)\n# Generate the time array\nt = np.linspace(0, duration, int(sample_rate * duration))\n# Generate the audio signal (sinusoidal waveform)\naudio_signal = np.sin(2 * np.pi * frequency * t)\n# Scale the audio signal to the appropriate range (-32768 to 32767 for 16-bit WAV)\nscaled_audio_signal = np.int16(audio_signal * 32767)\n# Save the audio signal as a WAV file\nwavfile.write(\"test_audio.wav\", sample_rate, scaled_audio_signal)",
+        "detail": "createSignal",
+        "documentation": {}
+    },
+    {
+        "label": "frequency",
+        "kind": 5,
+        "importPath": "createSignal",
+        "description": "createSignal",
+        "peekOfCode": "frequency = 440  # Frequency of the sinusoidal waveform (Hz)\n# Generate the time array\nt = np.linspace(0, duration, int(sample_rate * duration))\n# Generate the audio signal (sinusoidal waveform)\naudio_signal = np.sin(2 * np.pi * frequency * t)\n# Scale the audio signal to the appropriate range (-32768 to 32767 for 16-bit WAV)\nscaled_audio_signal = np.int16(audio_signal * 32767)\n# Save the audio signal as a WAV file\nwavfile.write(\"test_audio.wav\", sample_rate, scaled_audio_signal)\n# Plot the waveform",
+        "detail": "createSignal",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "createSignal",
+        "description": "createSignal",
+        "peekOfCode": "t = np.linspace(0, duration, int(sample_rate * duration))\n# Generate the audio signal (sinusoidal waveform)\naudio_signal = np.sin(2 * np.pi * frequency * t)\n# Scale the audio signal to the appropriate range (-32768 to 32767 for 16-bit WAV)\nscaled_audio_signal = np.int16(audio_signal * 32767)\n# Save the audio signal as a WAV file\nwavfile.write(\"test_audio.wav\", sample_rate, scaled_audio_signal)\n# Plot the waveform",
+        "detail": "createSignal",
+        "documentation": {}
+    },
+    {
+        "label": "audio_signal",
+        "kind": 5,
+        "importPath": "createSignal",
+        "description": "createSignal",
+        "peekOfCode": "audio_signal = np.sin(2 * np.pi * frequency * t)\n# Scale the audio signal to the appropriate range (-32768 to 32767 for 16-bit WAV)\nscaled_audio_signal = np.int16(audio_signal * 32767)\n# Save the audio signal as a WAV file\nwavfile.write(\"test_audio.wav\", sample_rate, scaled_audio_signal)\n# Plot the waveform",
+        "detail": "createSignal",
+        "documentation": {}
+    },
+    {
+        "label": "scaled_audio_signal",
+        "kind": 5,
+        "importPath": "createSignal",
+        "description": "createSignal",
+        "peekOfCode": "scaled_audio_signal = np.int16(audio_signal * 32767)\n# Save the audio signal as a WAV file\nwavfile.write(\"test_audio.wav\", sample_rate, scaled_audio_signal)\n# Plot the waveform",
+        "detail": "createSignal",
+        "documentation": {}
+    },
+    {
+        "label": "vertical_slider",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def vertical_slider(value, step, min=min, max=max, key=None):\n    slider_value = _vertical_slider(\n        value=value, step=step, min=min, max=max, key=key, default=value\n    )\n    return slider_value\n#  --------------------------   FOURIER TRANSFORM FOR  Wave       ----------------------------------------\n#  Data is 1-D for 1-channel WAV, or 2-D of shape (Nsamples, Nchannels)\ndef fourierTansformWave(audio=[], sampfreq=440010):\n    try:\n        audio = audio[:, 0]",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "fourierTansformWave",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def fourierTansformWave(audio=[], sampfreq=440010):\n    try:\n        audio = audio[:, 0]\n    except:\n        audio = audio[:]\n    #  Fourier transform\n    fourier_transform_magnitude = rfft(audio)\n    fourier_transform_freq = rfftfreq(len(audio), 1 / sampfreq)\n    return fourier_transform_magnitude, fourier_transform_freq\n# ------------------------------------------  modify_wave   ------------------------------------",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "modify_wave",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def modify_wave(\n    magnitude=[], numPoints=0, startIndex=0, scalerNumber=[], sliders_num=0\n):\n    for i in range(sliders_num):\n        magnitude[startIndex[i] : numPoints[i] + startIndex[i]] *= scalerNumber[i]\n    return magnitude\n# --------------------------------------------- bands -------------------------------------------\ndef bandLength(freq=[]):\n    length_band = len(freq) / 10\n    arr = np.zeros(10)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "bandLength",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def bandLength(freq=[]):\n    length_band = len(freq) / 10\n    arr = np.zeros(10)\n    for i in range(10):\n        arr[i] = int(i * length_band)\n    return arr, len(freq) / 10  # len(freq)/10 number of piont per band\n# ------------------------------------------------------ reconstruction signal -----------------------------------\ndef reconstruct(signal=[], sampleRate=0):\n    time = np.arange(0, len(signal) / sampleRate, 1 / sampleRate)\n    fig = px.line(x=time, y=signal)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "reconstruct",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def reconstruct(signal=[], sampleRate=0):\n    time = np.arange(0, len(signal) / sampleRate, 1 / sampleRate)\n    fig = px.line(x=time, y=signal)\n    st.plotly_chart(fig, use_container_width=True)\ndef creating_new_slider(label):\n    columns = st.columns(len(label))\n    sliders_values = []\n    for index in range(len(label)):\n        with columns[index]:\n            slider = vertical_slider(1, step=1, min=0, max=5, key=index)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "creating_new_slider",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def creating_new_slider(label):\n    columns = st.columns(len(label))\n    sliders_values = []\n    for index in range(len(label)):\n        with columns[index]:\n            slider = vertical_slider(1, step=1, min=0, max=5, key=index)\n            sliders_values.append(slider)\n            st.write(label[index])\n    return sliders_values\n# -----------------------------------------------------------------------------------------------------------------",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "Vowels",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def Vowels(points_per_freq, sliders, frequencies, fourier_frequency):\n    vowel = [\"sh\", \"M\", \"D\", \"R\"]\n    for i in range(len(frequencies)):\n        # print(frequencies[i][i])\n        for j in range(len(frequencies[i])):\n            # print(vowel[i],frequencies[i][j][0])\n            # print(vowel[i],frequencies[i][j][1])\n            signal = fourier_frequency[\n                int(points_per_freq * frequencies[i][j][0]) : int(\n                    points_per_freq * frequencies[i][j][1]",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "parent_dir",
+        "kind": 5,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "parent_dir = os.path.dirname(os.path.abspath(__file__))\nbuild_dir = os.path.join(parent_dir, \"build\")\n_vertical_slider = components.declare_component(\"vertical_slider\", path=build_dir)\ndef vertical_slider(value, step, min=min, max=max, key=None):\n    slider_value = _vertical_slider(\n        value=value, step=step, min=min, max=max, key=key, default=value\n    )\n    return slider_value\n#  --------------------------   FOURIER TRANSFORM FOR  Wave       ----------------------------------------\n#  Data is 1-D for 1-channel WAV, or 2-D of shape (Nsamples, Nchannels)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "build_dir",
+        "kind": 5,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "build_dir = os.path.join(parent_dir, \"build\")\n_vertical_slider = components.declare_component(\"vertical_slider\", path=build_dir)\ndef vertical_slider(value, step, min=min, max=max, key=None):\n    slider_value = _vertical_slider(\n        value=value, step=step, min=min, max=max, key=key, default=value\n    )\n    return slider_value\n#  --------------------------   FOURIER TRANSFORM FOR  Wave       ----------------------------------------\n#  Data is 1-D for 1-channel WAV, or 2-D of shape (Nsamples, Nchannels)\ndef fourierTansformWave(audio=[], sampfreq=440010):",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "_vertical_slider",
+        "kind": 5,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "_vertical_slider = components.declare_component(\"vertical_slider\", path=build_dir)\ndef vertical_slider(value, step, min=min, max=max, key=None):\n    slider_value = _vertical_slider(\n        value=value, step=step, min=min, max=max, key=key, default=value\n    )\n    return slider_value\n#  --------------------------   FOURIER TRANSFORM FOR  Wave       ----------------------------------------\n#  Data is 1-D for 1-channel WAV, or 2-D of shape (Nsamples, Nchannels)\ndef fourierTansformWave(audio=[], sampfreq=440010):\n    try:",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "groups",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "groups = [('2021-01-01',0),\n            ('2021-01-02',0),\n            ('2021-01-03',0),\n            ('2021-01-04',0),\n            ('2021-01-05',0),\n            ('2021-01-06',0),\n            ('2021-01-07',0),\n            ('2021-01-08',0),\n            ('2021-01-09',0),\n            ('2021-01-10',0)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "boundary",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "boundary = int(50)\nadjusted_data = []\nsliders = {}\ncolumns = st.columns(len(groups))\nfor idx, i in enumerate(groups):\n    min_value = i[1] - boundary\n    max_value = i[1] + boundary\n    key = f'member{str(idx)}'\n    with columns[idx]:\n        sliders[f'slider_group_{key}'] = svs.vertical_slider(key=key, default_value=i[1], step=1, min_value=min_value, max_value=max_value,slider_color=\"rgb(255, 75, 75)\", thumb_color=\"rgb(255, 75, 75)\")",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "adjusted_data",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "adjusted_data = []\nsliders = {}\ncolumns = st.columns(len(groups))\nfor idx, i in enumerate(groups):\n    min_value = i[1] - boundary\n    max_value = i[1] + boundary\n    key = f'member{str(idx)}'\n    with columns[idx]:\n        sliders[f'slider_group_{key}'] = svs.vertical_slider(key=key, default_value=i[1], step=1, min_value=min_value, max_value=max_value,slider_color=\"rgb(255, 75, 75)\", thumb_color=\"rgb(255, 75, 75)\")\n        if sliders[f'slider_group_{key}'] == None:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "sliders",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "sliders = {}\ncolumns = st.columns(len(groups))\nfor idx, i in enumerate(groups):\n    min_value = i[1] - boundary\n    max_value = i[1] + boundary\n    key = f'member{str(idx)}'\n    with columns[idx]:\n        sliders[f'slider_group_{key}'] = svs.vertical_slider(key=key, default_value=i[1], step=1, min_value=min_value, max_value=max_value,slider_color=\"rgb(255, 75, 75)\", thumb_color=\"rgb(255, 75, 75)\")\n        if sliders[f'slider_group_{key}'] == None:\n            sliders[f'slider_group_{key}']  = i[1]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "columns",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "columns = st.columns(len(groups))\nfor idx, i in enumerate(groups):\n    min_value = i[1] - boundary\n    max_value = i[1] + boundary\n    key = f'member{str(idx)}'\n    with columns[idx]:\n        sliders[f'slider_group_{key}'] = svs.vertical_slider(key=key, default_value=i[1], step=1, min_value=min_value, max_value=max_value,slider_color=\"rgb(255, 75, 75)\", thumb_color=\"rgb(255, 75, 75)\")\n        if sliders[f'slider_group_{key}'] == None:\n            sliders[f'slider_group_{key}']  = i[1]\n        adjusted_data.append((i[0],sliders[f'slider_group_{key}'] ))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "df = pd.DataFrame(adjusted_data, columns=['Date','Value'])\nst.line_chart(df, x='Date', y='Value')",
+        "detail": "main",
+        "documentation": {}
+    }
+]

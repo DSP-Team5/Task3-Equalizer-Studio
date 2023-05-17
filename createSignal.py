@@ -1,33 +1,21 @@
 import numpy as np
 from scipy.io import wavfile
-import animation
+import matplotlib.pyplot as plt
 
-# Define the sampling frequency and duration
-fs = 44100 # Sampling frequency (Hz)
-dur = 5 # Duration (s)
+sample_rate = 880  # Sample rate (Hz)
+duration = 5  # Duration of the audio signal (seconds)
+frequency = 440  # Frequency of the sinusoidal waveform (Hz)
 
-# Define the frequency of the sine wave
-f = 500 # Frequency (Hz)
+# Generate the time array
+t = np.linspace(0, duration, int(sample_rate * duration))
 
-# Generate the sine wave
-t = np.arange(0, dur, 1/fs) # Time vector
-y = np.sin(2*np.pi*f*t) # Sine
+# Generate the audio signal (sinusoidal waveform)
+audio_signal = np.sin(2 * np.pi * frequency * t)
 
-# Apply a low-pass filter using the method
-fc = 1000 # Cutoff frequency (Hz)
-order = 4 # Order of the filter
-h = np.sin(2*np.pi*fc*t)/(np.pi*t + np.finfo(float).eps) # Ideal low-pass filter impulse response
-w = np.hamming(len(h)) # Window function
-h_windowed = h*w # Windowed impulse response
-h_windowed = h_windowed/np.sum(h_windowed) # Normalize the filter coefficients
-b = h_windowed # Numerator coefficients
-a = 1 # Denominator coefficients
-y_filtered = np.convolve(b, y, mode='same') # Filtered signal
+# Scale the audio signal to the appropriate range (-32768 to 32767 for 16-bit WAV)
+scaled_audio_signal = np.int16(audio_signal * 32767)
 
-# Save the waveform as a WAV file with float32 sample width
-filename = 'sine_wave.wav'
-wavfile.write(filename, fs, y_filtered.astype(np.float32))
+# Save the audio signal as a WAV file
+wavfile.write("test_audio.wav", sample_rate, scaled_audio_signal)
 
-
-# Read the waveform from the WAV file using animation.read_audio
-
+# Plot the waveform
