@@ -367,7 +367,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "numpoints = []\nstartIndex =[]\nsamplfreq=0\nlines1=any\noptional =  False\n# -------------------------------------------------------------------------------------------------------------#\nfile_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Optional\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:",
+        "peekOfCode": "numpoints = []\nstartIndex =[]\nsamplfreq=0\nlines1=any\noptional =  False\n# -------------------------------------------------------------------------------------------------------------#\nfile_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:",
         "detail": "app",
         "documentation": {}
     },
@@ -376,7 +376,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "optional =  False\n# -------------------------------------------------------------------------------------------------------------#\nfile_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Optional\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:",
+        "peekOfCode": "optional =  False\n# -------------------------------------------------------------------------------------------------------------#\nfile_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:",
         "detail": "app",
         "documentation": {}
     },
@@ -385,7 +385,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "file_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Optional\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif file_uploaded==None:",
+        "peekOfCode": "file_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif file_uploaded==None:",
         "detail": "app",
         "documentation": {}
     },
@@ -394,7 +394,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "radio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Optional\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif file_uploaded==None:\n    # welcome_text = '<p class=\"page_titel\", style=\"font-family:Arial\">Please upload file </p>'",
+        "peekOfCode": "radio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif file_uploaded==None:\n    # welcome_text = '<p class=\"page_titel\", style=\"font-family:Arial\">Please upload file </p>'",
         "detail": "app",
         "documentation": {}
     },

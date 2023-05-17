@@ -39,7 +39,7 @@ optional =  False
 # -------------------------------------------------------------------------------------------------------------#
 file_uploaded = st.sidebar.file_uploader("")
 
-radio_button = st.sidebar.radio("", ["Normal", "Music", "Vowels","Optional"], horizontal=False)
+radio_button = st.sidebar.radio("", ["Normal", "Music", "Vowels","Biological abnormalities"], horizontal=False)
 
 before_col,after_col=st.columns(2)
 if "size" not in st.session_state:
@@ -57,7 +57,7 @@ else:
     name=file_uploaded.name
     type = file_uploaded.type
 
-if (radio_button == "Music" or radio_button == "Normal" or radio_button == "Vowels" or radio_button =="Optional"):
+if (radio_button == "Music" or radio_button == "Normal" or radio_button == "Vowels" or radio_button =="Biological abnormalities"):
   
     if type=="audio/wav":
         signal_x_axis_before, signal_y_axis_before, sample_rate_before ,sound_info_before = animation.read_audio(name)
@@ -117,7 +117,7 @@ if (radio_button == "Music" or radio_button == "Normal" or radio_button == "Vowe
             frequencies = [[[900, 9300]], [[10, 2300]], [[100, 600], [2000, 4000]], [[1200, 5000]]]
             # startIndex, numpoints = fn.get_data(samplfreq,freq,frequencies,len(label))
 # ------------------------------------------------- END Vowels  ---------------------------------
-        elif radio_button=="Optional":      
+        elif radio_button=="Biological abnormalities":      
             label=["wolf", "bird"]
             sliders =fn.creating_new_slider(label)
             frequencies=[200,2500,20000]

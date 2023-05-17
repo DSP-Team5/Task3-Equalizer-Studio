@@ -13,7 +13,7 @@ with st.container():
         file_uploaded = st.file_uploader("")
     with freq_col:
         normal_freq = st.radio("", [
-                               "normal ", "music ", "vowels", "medical"], horizontal=True)
+                               "normal ", "music ", "vowels", "Biological abnormalities"], horizontal=True)
    
 groups = [('2021-01-01',0),
             ('2021-01-02',0),
