@@ -118,12 +118,7 @@ if (radio_button == "Music" or radio_button == "Normal" or radio_button == "Vowe
             # startIndex, numpoints = fn.get_data(samplfreq,freq,frequencies,len(label))
 # ------------------------------------------------- END Vowels  ---------------------------------
         elif radio_button=="Biological abnormalities":      
-            label=["wolf", "bird"]
-            sliders =fn.creating_new_slider(label)
-            frequencies=[200,2500,20000]
-            for i in range(len(label)):
-                    numpoints.insert(i,np.abs(frequencies[i] * points_per_freq - frequencies[i+1] * points_per_freq))
-                    startIndex.insert(i,frequencies[i] * points_per_freq)
+            raise NotImplementedError("Not implemented yet")
             
         magnitude_spactro=magnitude
         spectrogramOrigin = irfft(magnitude_spactro)
