@@ -132,11 +132,12 @@
         "documentation": {}
     },
     {
-        "label": "HIDDEN",
-        "importPath": "tkinter",
-        "description": "tkinter",
+        "label": "animation",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "tkinter",
+        "importPath": "animation",
+        "description": "animation",
+        "detail": "animation",
         "documentation": {}
     },
     {
@@ -163,6 +164,14 @@
         "importPath": "functions",
         "description": "functions",
         "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "wavfile",
+        "importPath": "scipy.io",
+        "description": "scipy.io",
+        "isExtraImport": true,
+        "detail": "scipy.io",
         "documentation": {}
     },
     {
@@ -265,15 +274,6 @@
         "documentation": {}
     },
     {
-        "label": "animation",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "animation",
-        "description": "animation",
-        "detail": "animation",
-        "documentation": {}
-    },
-    {
         "label": "time",
         "kind": 6,
         "isExtraImport": true,
@@ -298,6 +298,15 @@
         "importPath": "soundfile",
         "description": "soundfile",
         "detail": "soundfile",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
         "documentation": {}
     },
     {
@@ -336,20 +345,29 @@
         "documentation": {}
     },
     {
+        "label": "matplotlib.gridspec",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.gridspec",
+        "description": "matplotlib.gridspec",
+        "detail": "matplotlib.gridspec",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
         "label": "variabl",
         "kind": 6,
         "importPath": "animation",
         "description": "animation",
-        "peekOfCode": "class variabls :\n    points_num =1000\n    count=0\ndef read_audio(audio_file):\n    obj = wave.open(audio_file, 'r')\n    sample_rate   = obj.getframerate()                           # number of samples per second\n    n_samples     = obj.getnframes()                             # total number of samples in the whole audio\n    signal_wave   = obj.readframes(-1)                           # amplitude of the sound\n    duration      = n_samples / sample_rate                      # duration of the audio file\n    sound_info    = pylab.fromstring(signal_wave, 'int16')",
-        "detail": "animation",
-        "documentation": {}
-    },
-    {
-        "label": "read_audio",
-        "kind": 2,
-        "importPath": "animation",
-        "description": "animation",
-        "peekOfCode": "def read_audio(audio_file):\n    obj = wave.open(audio_file, 'r')\n    sample_rate   = obj.getframerate()                           # number of samples per second\n    n_samples     = obj.getnframes()                             # total number of samples in the whole audio\n    signal_wave   = obj.readframes(-1)                           # amplitude of the sound\n    duration      = n_samples / sample_rate                      # duration of the audio file\n    sound_info    = pylab.fromstring(signal_wave, 'int16')\n    signal_y_axis = np.frombuffer(signal_wave, dtype=np.int16)\n    signal_x_axis = np.linspace(0, duration, len(signal_y_axis))\n    return signal_x_axis, signal_y_axis, sample_rate,  sound_info",
+        "peekOfCode": "class variabls :\n    points_num =1000\n    count=0\n# Plot a Chart\ndef plot_animation(df):\n    brush = alt.selection_interval()\n    lines = alt.Chart(df).mark_line().encode(\n        x=alt.X('time', axis=alt.Axis(title='time')),\n        y=alt.Y('amplitude', axis=alt.Axis(title='amplitude')),\n    ).properties(",
         "detail": "animation",
         "documentation": {}
     },
@@ -367,7 +385,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "numpoints = []\nstartIndex =[]\nsamplfreq=0\nlines1=any\noptional =  False\n# -------------------------------------------------------------------------------------------------------------#\nfile_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:",
+        "peekOfCode": "numpoints = []\nstartIndex =[]\nsamplfreq=0\nlines1=any\noptional =  False\ndirectory = \"/assets/\"\n# -------------------------------------------------------------------------------------------------------------#\nuploaded_file = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nif \"size\" not in st.session_state:",
         "detail": "app",
         "documentation": {}
     },
@@ -376,16 +394,25 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "optional =  False\n# -------------------------------------------------------------------------------------------------------------#\nfile_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:",
+        "peekOfCode": "optional =  False\ndirectory = \"/assets/\"\n# -------------------------------------------------------------------------------------------------------------#\nuploaded_file = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:",
         "detail": "app",
         "documentation": {}
     },
     {
-        "label": "file_uploaded",
+        "label": "directory",
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "file_uploaded = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif file_uploaded==None:",
+        "peekOfCode": "directory = \"/assets/\"\n# -------------------------------------------------------------------------------------------------------------#\nuploaded_file = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "uploaded_file",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "uploaded_file = st.sidebar.file_uploader(\"\")\nradio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif uploaded_file is not None:\n    name = uploaded_file.name",
         "detail": "app",
         "documentation": {}
     },
@@ -394,7 +421,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "radio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nbefore_col,after_col=st.columns(2)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif file_uploaded==None:\n    # welcome_text = '<p class=\"page_titel\", style=\"font-family:Arial\">Please upload file </p>'",
+        "peekOfCode": "radio_button = st.sidebar.radio(\"\", [\"Normal\", \"Music\", \"Vowels\",\"Biological abnormalities\"], horizontal=False)\nif \"size\" not in st.session_state:\n    st.session_state['size'] = 0\nif \"counter\" not in st.session_state:\n    st.session_state['counter'] = 0\nif \"btn_state\" not in st.session_state:\n    st.session_state['btn_state'] = 0\nif uploaded_file is not None:\n    name = uploaded_file.name\n    type = uploaded_file.type",
         "detail": "app",
         "documentation": {}
     },
@@ -453,11 +480,137 @@
         "documentation": {}
     },
     {
+        "label": "read_csv",
+        "kind": 2,
+        "importPath": "ecgtowav",
+        "description": "ecgtowav",
+        "peekOfCode": "def read_csv(file_path):\n    with open(file_path, 'r') as csvfile:\n        reader = csv.reader(csvfile)\n        data = list(reader)\n    return data\n# Extract ECG signal from CSV data\ndef extract_ecg_signal(data):\n    ecg_signal = []\n    for row in data:\n        ecg_signal.append(float(row[0]))  # Assuming the ECG signal is in the first column",
+        "detail": "ecgtowav",
+        "documentation": {}
+    },
+    {
+        "label": "extract_ecg_signal",
+        "kind": 2,
+        "importPath": "ecgtowav",
+        "description": "ecgtowav",
+        "peekOfCode": "def extract_ecg_signal(data):\n    ecg_signal = []\n    for row in data:\n        ecg_signal.append(float(row[0]))  # Assuming the ECG signal is in the first column\n    return np.array(ecg_signal)\n# Convert ECG signal to WAV file\ndef convert_to_wav(ecg_signal, sample_rate, output_file):\n    wavfile.write(output_file, sample_rate, ecg_signal)\n# Main function\ndef csv_to_wav(csv_file, sample_rate, wav_file):",
+        "detail": "ecgtowav",
+        "documentation": {}
+    },
+    {
+        "label": "convert_to_wav",
+        "kind": 2,
+        "importPath": "ecgtowav",
+        "description": "ecgtowav",
+        "peekOfCode": "def convert_to_wav(ecg_signal, sample_rate, output_file):\n    wavfile.write(output_file, sample_rate, ecg_signal)\n# Main function\ndef csv_to_wav(csv_file, sample_rate, wav_file):\n    # Read CSV file\n    csv_data = read_csv(csv_file)\n    # Extract ECG signal\n    ecg_signal = extract_ecg_signal(csv_data)\n    # Convert to WAV file\n    convert_to_wav(ecg_signal, sample_rate, wav_file)",
+        "detail": "ecgtowav",
+        "documentation": {}
+    },
+    {
+        "label": "csv_to_wav",
+        "kind": 2,
+        "importPath": "ecgtowav",
+        "description": "ecgtowav",
+        "peekOfCode": "def csv_to_wav(csv_file, sample_rate, wav_file):\n    # Read CSV file\n    csv_data = read_csv(csv_file)\n    # Extract ECG signal\n    ecg_signal = extract_ecg_signal(csv_data)\n    # Convert to WAV file\n    convert_to_wav(ecg_signal, sample_rate, wav_file)\n# Specify the CSV file path, sample rate, and output WAV file path\ncsv_file = 'ecg-data.csv'\nsample_rate = 44100  # Specify the appropriate sample rate",
+        "detail": "ecgtowav",
+        "documentation": {}
+    },
+    {
+        "label": "csv_file",
+        "kind": 5,
+        "importPath": "ecgtowav",
+        "description": "ecgtowav",
+        "peekOfCode": "csv_file = 'ecg-data.csv'\nsample_rate = 44100  # Specify the appropriate sample rate\nwav_file = 'file.wav'\n# Convert CSV to WAV\ncsv_to_wav(csv_file, sample_rate, wav_file)",
+        "detail": "ecgtowav",
+        "documentation": {}
+    },
+    {
+        "label": "sample_rate",
+        "kind": 5,
+        "importPath": "ecgtowav",
+        "description": "ecgtowav",
+        "peekOfCode": "sample_rate = 44100  # Specify the appropriate sample rate\nwav_file = 'file.wav'\n# Convert CSV to WAV\ncsv_to_wav(csv_file, sample_rate, wav_file)",
+        "detail": "ecgtowav",
+        "documentation": {}
+    },
+    {
+        "label": "wav_file",
+        "kind": 5,
+        "importPath": "ecgtowav",
+        "description": "ecgtowav",
+        "peekOfCode": "wav_file = 'file.wav'\n# Convert CSV to WAV\ncsv_to_wav(csv_file, sample_rate, wav_file)",
+        "detail": "ecgtowav",
+        "documentation": {}
+    },
+    {
+        "label": "validate_file_type",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def validate_file_type(file_name, allowed_types):\n    ext = os.path.splitext(file_name)[1][1:].lower()\n    return ext in allowed_types\ndef readcsv(file_uploaded):\n     File=pd.read_csv(file_uploaded)\n     data = File.to_numpy()\n     time_signal =data[:, 0]\n     magnitude =data[:, 1]\n     sample_rate=2/(time_signal[1]-time_signal[0])\n     return time_signal,magnitude,sample_rate",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "readcsv",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def readcsv(file_uploaded):\n     File=pd.read_csv(file_uploaded)\n     data = File.to_numpy()\n     time_signal =data[:, 0]\n     magnitude =data[:, 1]\n     sample_rate=2/(time_signal[1]-time_signal[0])\n     return time_signal,magnitude,sample_rate\n# Extract ECG signal from CSV data\ndef extract_ecg_signal(data):\n    ecg_signal = []",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "extract_ecg_signal",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def extract_ecg_signal(data):\n    ecg_signal = []\n    for row in data:\n        ecg_signal.append(float(row[0]))  # Assuming the ECG signal is in the first column\n    return np.array(ecg_signal)\n# Convert ECG signal to WAV file\ndef convert_to_wav(ecg_signal, sample_rate, output_file):\n    # Scale the signal to fit within the range of int16\n    scaled_signal = np.int16(ecg_signal / np.max(np.abs(ecg_signal)) * 32767)\n    wavfile.write(output_file, sample_rate, scaled_signal)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "convert_to_wav",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def convert_to_wav(ecg_signal, sample_rate, output_file):\n    # Scale the signal to fit within the range of int16\n    scaled_signal = np.int16(ecg_signal / np.max(np.abs(ecg_signal)) * 32767)\n    wavfile.write(output_file, sample_rate, scaled_signal)\n# Main function\ndef csv_to_wav(csv_file, sample_rate, wav_file):\n    # Read CSV file\n    csv_data = readcsv(csv_file)\n    # Extract ECG signal\n    ecg_signal = extract_ecg_signal(csv_data)",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "csv_to_wav",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def csv_to_wav(csv_file, sample_rate, wav_file):\n    # Read CSV file\n    csv_data = readcsv(csv_file)\n    # Extract ECG signal\n    ecg_signal = extract_ecg_signal(csv_data)\n    # Convert to WAV file\n    convert_to_wav(ecg_signal, sample_rate, wav_file)\ndef read_audio(audio_file):\n    obj = wave.open(audio_file, 'r')\n    sample_rate   = obj.getframerate()                           # number of samples per second",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "read_audio",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def read_audio(audio_file):\n    obj = wave.open(audio_file, 'r')\n    sample_rate   = obj.getframerate()                           # number of samples per second\n    n_samples     = obj.getnframes()                             # total number of samples in the whole audio\n    signal_wave   = obj.readframes(-1)                           # amplitude of the sound\n    duration      = n_samples / sample_rate                      # duration of the audio file\n    sound_info    = pylab.fromstring(signal_wave, 'int16')\n    signal_y_axis = np.frombuffer(signal_wave, dtype=np.int16)\n    signal_x_axis = np.linspace(0, duration, len(signal_y_axis))\n    return signal_x_axis, signal_y_axis, sample_rate,  sound_info",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
         "label": "vertical_slider",
         "kind": 2,
         "importPath": "functions",
         "description": "functions",
-        "peekOfCode": "def vertical_slider(value, step, min=min, max=max, key=None):\n    slider_value = _vertical_slider(\n        value=value, step=step, min=min, max=max, key=key, default=value\n    )\n    return slider_value\n#  --------------------------   FOURIER TRANSFORM FOR  Wave       ----------------------------------------\n#  Data is 1-D for 1-channel WAV, or 2-D of shape (Nsamples, Nchannels)\ndef fourierTansformWave(audio=[], sampfreq=440010):\n    try:\n        audio = audio[:, 0]",
+        "peekOfCode": "def vertical_slider(value, step, min=min, max=max, key=None):\n    slider_value = _vertical_slider(\n        value=value, step=step, min=min, max=max, key=key, default=value\n    )\n    return slider_value\ndef creating_new_slider(label):\n    columns = st.columns(len(label))\n    sliders_values = []\n    for index in range(len(label)):\n        with columns[index]:",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
+        "label": "creating_new_slider",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def creating_new_slider(label):\n    columns = st.columns(len(label))\n    sliders_values = []\n    for index in range(len(label)):\n        with columns[index]:\n            slider = vertical_slider(1, step=1, min=0, max=5, key=index)\n            sliders_values.append(slider)\n            st.write(label[index])\n    return sliders_values\n#  --------------------------   FOURIER TRANSFORM FOR  Wave       ----------------------------------------",
         "detail": "functions",
         "documentation": {}
     },
@@ -466,7 +619,7 @@
         "kind": 2,
         "importPath": "functions",
         "description": "functions",
-        "peekOfCode": "def fourierTansformWave(audio=[], sampfreq=440010):\n    try:\n        audio = audio[:, 0]\n    except:\n        audio = audio[:]\n    #  Fourier transform\n    fourier_transform_magnitude = rfft(audio)\n    fourier_transform_freq = rfftfreq(len(audio), 1 / sampfreq)\n    return fourier_transform_magnitude, fourier_transform_freq\n# ------------------------------------------  modify_wave   ------------------------------------",
+        "peekOfCode": "def fourierTansformWave(audio=[], sampfreq=44100):\n    try:\n        audio = audio[:, 0]\n    except:\n        audio = audio[:]\n    #  Fourier transform\n    fourier_transform_magnitude = rfft(audio)\n    fourier_transform_freq = rfftfreq(len(audio), 1 / sampfreq)\n    return fourier_transform_magnitude, fourier_transform_freq\n# ------------------------------------------  modify_wave   ------------------------------------",
         "detail": "functions",
         "documentation": {}
     },
@@ -484,25 +637,7 @@
         "kind": 2,
         "importPath": "functions",
         "description": "functions",
-        "peekOfCode": "def bandLength(freq=[]):\n    length_band = len(freq) / 10\n    arr = np.zeros(10)\n    for i in range(10):\n        arr[i] = int(i * length_band)\n    return arr, len(freq) / 10  # len(freq)/10 number of piont per band\n# ------------------------------------------------------ reconstruction signal -----------------------------------\ndef reconstruct(signal=[], sampleRate=0):\n    time = np.arange(0, len(signal) / sampleRate, 1 / sampleRate)\n    fig = px.line(x=time, y=signal)",
-        "detail": "functions",
-        "documentation": {}
-    },
-    {
-        "label": "reconstruct",
-        "kind": 2,
-        "importPath": "functions",
-        "description": "functions",
-        "peekOfCode": "def reconstruct(signal=[], sampleRate=0):\n    time = np.arange(0, len(signal) / sampleRate, 1 / sampleRate)\n    fig = px.line(x=time, y=signal)\n    st.plotly_chart(fig, use_container_width=True)\ndef creating_new_slider(label):\n    columns = st.columns(len(label))\n    sliders_values = []\n    for index in range(len(label)):\n        with columns[index]:\n            slider = vertical_slider(1, step=1, min=0, max=5, key=index)",
-        "detail": "functions",
-        "documentation": {}
-    },
-    {
-        "label": "creating_new_slider",
-        "kind": 2,
-        "importPath": "functions",
-        "description": "functions",
-        "peekOfCode": "def creating_new_slider(label):\n    columns = st.columns(len(label))\n    sliders_values = []\n    for index in range(len(label)):\n        with columns[index]:\n            slider = vertical_slider(1, step=1, min=0, max=5, key=index)\n            sliders_values.append(slider)\n            st.write(label[index])\n    return sliders_values\n# -----------------------------------------------------------------------------------------------------------------",
+        "peekOfCode": "def bandLength(freq=[]):\n    length_band = len(freq) / 10\n    arr = np.zeros(10)\n    for i in range(10):\n        arr[i] = int(i * length_band)\n    return arr, len(freq) / 10  # len(freq)/10 number of piont per band\n# ------------------------------------------------------ reconstruction signal -----------------------------------\n# -----------------------------------------------------------------------------------------------------------------\ndef Vowels(points_per_freq, sliders, frequencies, fourier_frequency):\n    vowel = [\"sh\", \"M\", \"D\", \"R\"]",
         "detail": "functions",
         "documentation": {}
     },
@@ -516,11 +651,20 @@
         "documentation": {}
     },
     {
+        "label": "welcome_screen",
+        "kind": 2,
+        "importPath": "functions",
+        "description": "functions",
+        "peekOfCode": "def welcome_screen():\n    st.markdown(\n        \"\"\"\n        <style>\n        .title {\n            color: #FF5733;\n            font-size: 30px;\n            margin-bottom: 20px;\n        }\n        .team-members {",
+        "detail": "functions",
+        "documentation": {}
+    },
+    {
         "label": "parent_dir",
         "kind": 5,
         "importPath": "functions",
         "description": "functions",
-        "peekOfCode": "parent_dir = os.path.dirname(os.path.abspath(__file__))\nbuild_dir = os.path.join(parent_dir, \"build\")\n_vertical_slider = components.declare_component(\"vertical_slider\", path=build_dir)\ndef vertical_slider(value, step, min=min, max=max, key=None):\n    slider_value = _vertical_slider(\n        value=value, step=step, min=min, max=max, key=key, default=value\n    )\n    return slider_value\n#  --------------------------   FOURIER TRANSFORM FOR  Wave       ----------------------------------------\n#  Data is 1-D for 1-channel WAV, or 2-D of shape (Nsamples, Nchannels)",
+        "peekOfCode": "parent_dir = os.path.dirname(os.path.abspath(__file__))\nbuild_dir = os.path.join(parent_dir, \"build\")\n_vertical_slider = components.declare_component(\"vertical_slider\", path=build_dir)\ndef validate_file_type(file_name, allowed_types):\n    ext = os.path.splitext(file_name)[1][1:].lower()\n    return ext in allowed_types\ndef readcsv(file_uploaded):\n     File=pd.read_csv(file_uploaded)\n     data = File.to_numpy()\n     time_signal =data[:, 0]",
         "detail": "functions",
         "documentation": {}
     },
@@ -529,7 +673,7 @@
         "kind": 5,
         "importPath": "functions",
         "description": "functions",
-        "peekOfCode": "build_dir = os.path.join(parent_dir, \"build\")\n_vertical_slider = components.declare_component(\"vertical_slider\", path=build_dir)\ndef vertical_slider(value, step, min=min, max=max, key=None):\n    slider_value = _vertical_slider(\n        value=value, step=step, min=min, max=max, key=key, default=value\n    )\n    return slider_value\n#  --------------------------   FOURIER TRANSFORM FOR  Wave       ----------------------------------------\n#  Data is 1-D for 1-channel WAV, or 2-D of shape (Nsamples, Nchannels)\ndef fourierTansformWave(audio=[], sampfreq=440010):",
+        "peekOfCode": "build_dir = os.path.join(parent_dir, \"build\")\n_vertical_slider = components.declare_component(\"vertical_slider\", path=build_dir)\ndef validate_file_type(file_name, allowed_types):\n    ext = os.path.splitext(file_name)[1][1:].lower()\n    return ext in allowed_types\ndef readcsv(file_uploaded):\n     File=pd.read_csv(file_uploaded)\n     data = File.to_numpy()\n     time_signal =data[:, 0]\n     magnitude =data[:, 1]",
         "detail": "functions",
         "documentation": {}
     },
@@ -538,62 +682,35 @@
         "kind": 5,
         "importPath": "functions",
         "description": "functions",
-        "peekOfCode": "_vertical_slider = components.declare_component(\"vertical_slider\", path=build_dir)\ndef vertical_slider(value, step, min=min, max=max, key=None):\n    slider_value = _vertical_slider(\n        value=value, step=step, min=min, max=max, key=key, default=value\n    )\n    return slider_value\n#  --------------------------   FOURIER TRANSFORM FOR  Wave       ----------------------------------------\n#  Data is 1-D for 1-channel WAV, or 2-D of shape (Nsamples, Nchannels)\ndef fourierTansformWave(audio=[], sampfreq=440010):\n    try:",
+        "peekOfCode": "_vertical_slider = components.declare_component(\"vertical_slider\", path=build_dir)\ndef validate_file_type(file_name, allowed_types):\n    ext = os.path.splitext(file_name)[1][1:].lower()\n    return ext in allowed_types\ndef readcsv(file_uploaded):\n     File=pd.read_csv(file_uploaded)\n     data = File.to_numpy()\n     time_signal =data[:, 0]\n     magnitude =data[:, 1]\n     sample_rate=2/(time_signal[1]-time_signal[0])",
         "detail": "functions",
         "documentation": {}
     },
     {
-        "label": "groups",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "groups = [('2021-01-01',0),\n            ('2021-01-02',0),\n            ('2021-01-03',0),\n            ('2021-01-04',0),\n            ('2021-01-05',0),\n            ('2021-01-06',0),\n            ('2021-01-07',0),\n            ('2021-01-08',0),\n            ('2021-01-09',0),\n            ('2021-01-10',0)",
-        "detail": "main",
+        "label": "generate_signal",
+        "kind": 2,
+        "importPath": "mode4",
+        "description": "mode4",
+        "peekOfCode": "def generate_signal(duration, sampling_rate):\n    t = np.linspace(0, duration, int(duration * sampling_rate), endpoint=False)\n    signal = np.sin(2 * np.pi * 1.0 * t) + np.sin(2 * np.pi * 4.0 * t)\n    return t, signal\ndef apply_ecg_arrhythmia(signal, magnitude):\n    modified_signal = signal + magnitude * np.random.normal(0, 0.1, len(signal))\n    return modified_signal\nst.sidebar.title(\"Biological Signal Abnormalities\")\nmode = st.sidebar.selectbox(\"Select Mode\", [\"Mode 1\", \"Mode 2\", \"Mode 3\", \"Mode 4\"])\nst.title(\"Biological Signal Abnormalities\")",
+        "detail": "mode4",
         "documentation": {}
     },
     {
-        "label": "boundary",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "boundary = int(50)\nadjusted_data = []\nsliders = {}\ncolumns = st.columns(len(groups))\nfor idx, i in enumerate(groups):\n    min_value = i[1] - boundary\n    max_value = i[1] + boundary\n    key = f'member{str(idx)}'\n    with columns[idx]:\n        sliders[f'slider_group_{key}'] = svs.vertical_slider(key=key, default_value=i[1], step=1, min_value=min_value, max_value=max_value,slider_color=\"rgb(255, 75, 75)\", thumb_color=\"rgb(255, 75, 75)\")",
-        "detail": "main",
+        "label": "apply_ecg_arrhythmia",
+        "kind": 2,
+        "importPath": "mode4",
+        "description": "mode4",
+        "peekOfCode": "def apply_ecg_arrhythmia(signal, magnitude):\n    modified_signal = signal + magnitude * np.random.normal(0, 0.1, len(signal))\n    return modified_signal\nst.sidebar.title(\"Biological Signal Abnormalities\")\nmode = st.sidebar.selectbox(\"Select Mode\", [\"Mode 1\", \"Mode 2\", \"Mode 3\", \"Mode 4\"])\nst.title(\"Biological Signal Abnormalities\")\nif mode == \"Mode 4\":\n    st.subheader(\"ECG Arrhythmia\")\n    magnitude = st.slider(\"Magnitude\", 0.0, 1.0, 0.5, 0.1)\n    show_spectrograms = st.checkbox(\"Show Spectrograms\")",
+        "detail": "mode4",
         "documentation": {}
     },
     {
-        "label": "adjusted_data",
+        "label": "mode",
         "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "adjusted_data = []\nsliders = {}\ncolumns = st.columns(len(groups))\nfor idx, i in enumerate(groups):\n    min_value = i[1] - boundary\n    max_value = i[1] + boundary\n    key = f'member{str(idx)}'\n    with columns[idx]:\n        sliders[f'slider_group_{key}'] = svs.vertical_slider(key=key, default_value=i[1], step=1, min_value=min_value, max_value=max_value,slider_color=\"rgb(255, 75, 75)\", thumb_color=\"rgb(255, 75, 75)\")\n        if sliders[f'slider_group_{key}'] == None:",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "sliders",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "sliders = {}\ncolumns = st.columns(len(groups))\nfor idx, i in enumerate(groups):\n    min_value = i[1] - boundary\n    max_value = i[1] + boundary\n    key = f'member{str(idx)}'\n    with columns[idx]:\n        sliders[f'slider_group_{key}'] = svs.vertical_slider(key=key, default_value=i[1], step=1, min_value=min_value, max_value=max_value,slider_color=\"rgb(255, 75, 75)\", thumb_color=\"rgb(255, 75, 75)\")\n        if sliders[f'slider_group_{key}'] == None:\n            sliders[f'slider_group_{key}']  = i[1]",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "columns",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "columns = st.columns(len(groups))\nfor idx, i in enumerate(groups):\n    min_value = i[1] - boundary\n    max_value = i[1] + boundary\n    key = f'member{str(idx)}'\n    with columns[idx]:\n        sliders[f'slider_group_{key}'] = svs.vertical_slider(key=key, default_value=i[1], step=1, min_value=min_value, max_value=max_value,slider_color=\"rgb(255, 75, 75)\", thumb_color=\"rgb(255, 75, 75)\")\n        if sliders[f'slider_group_{key}'] == None:\n            sliders[f'slider_group_{key}']  = i[1]\n        adjusted_data.append((i[0],sliders[f'slider_group_{key}'] ))",
-        "detail": "main",
-        "documentation": {}
-    },
-    {
-        "label": "df",
-        "kind": 5,
-        "importPath": "main",
-        "description": "main",
-        "peekOfCode": "df = pd.DataFrame(adjusted_data, columns=['Date','Value'])\nst.line_chart(df, x='Date', y='Value')",
-        "detail": "main",
+        "importPath": "mode4",
+        "description": "mode4",
+        "peekOfCode": "mode = st.sidebar.selectbox(\"Select Mode\", [\"Mode 1\", \"Mode 2\", \"Mode 3\", \"Mode 4\"])\nst.title(\"Biological Signal Abnormalities\")\nif mode == \"Mode 4\":\n    st.subheader(\"ECG Arrhythmia\")\n    magnitude = st.slider(\"Magnitude\", 0.0, 1.0, 0.5, 0.1)\n    show_spectrograms = st.checkbox(\"Show Spectrograms\")\n    duration = 10.0  # Duration of the signal in seconds\n    sampling_rate = 1000  # Number of samples per second\n    t, signal = generate_signal(duration, sampling_rate)\n    modified_signal = apply_ecg_arrhythmia(signal, magnitude)",
+        "detail": "mode4",
         "documentation": {}
     }
 ]
