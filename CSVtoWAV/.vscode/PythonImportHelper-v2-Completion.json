@@ -1,0 +1,348 @@
+[
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "wave",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wave",
+        "description": "wave",
+        "detail": "wave",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "wavfile",
+        "importPath": "scipy.io",
+        "description": "scipy.io",
+        "isExtraImport": true,
+        "detail": "scipy.io",
+        "documentation": {}
+    },
+    {
+        "label": "wavfile",
+        "importPath": "scipy.io",
+        "description": "scipy.io",
+        "isExtraImport": true,
+        "detail": "scipy.io",
+        "documentation": {}
+    },
+    {
+        "label": "wavfile",
+        "importPath": "scipy.io",
+        "description": "scipy.io",
+        "isExtraImport": true,
+        "detail": "scipy.io",
+        "documentation": {}
+    },
+    {
+        "label": "wavfile",
+        "importPath": "scipy.io",
+        "description": "scipy.io",
+        "isExtraImport": true,
+        "detail": "scipy.io",
+        "documentation": {}
+    },
+    {
+        "label": "wfdb",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wfdb",
+        "description": "wfdb",
+        "detail": "wfdb",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.graph_objects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.graph_objects",
+        "description": "plotly.graph_objects",
+        "detail": "plotly.graph_objects",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "read_csv",
+        "kind": 2,
+        "importPath": "csvtowav",
+        "description": "csvtowav",
+        "peekOfCode": "def read_csv(csv_file):\n  \"\"\"Reads a CSV file and returns a NumPy array.\n  Args:\n    csv_file: The path to the CSV file.\n  Returns:\n    A NumPy array containing the data from the CSV file.\n  \"\"\"\n  with open(csv_file, \"r\") as f:\n    reader = csv.reader(f)\n    header = next(reader)",
+        "detail": "csvtowav",
+        "documentation": {}
+    },
+    {
+        "label": "write_wav",
+        "kind": 2,
+        "importPath": "csvtowav",
+        "description": "csvtowav",
+        "peekOfCode": "def write_wav(data, wav_file):\n  \"\"\"Writes a NumPy array to a WAV file.\n  Args:\n    data: The NumPy array containing the data to write.\n    wav_file: The path to the WAV file to write to.\n  \"\"\"\n  # Create a wave file object.\n  wf = wave.open(wav_file, \"wb\")\n  # Set the wave file parameters.\n  wf.setnchannels(1)",
+        "detail": "csvtowav",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "csvtowav",
+        "description": "csvtowav",
+        "peekOfCode": "def main():\n  # Get the path to the CSV file.\n  csv_file = filedialog.askopenfilename(filetypes=[(\"CSV Files\", \"*.csv\")])\n  # Read the data from the CSV file.\n  data = read_csv(csv_file)\n  # Get the path to the WAV file.\n  wav_file = os.path.splitext(csv_file)[0] + \".wav\"\n  # Write the data to the WAV file.\n  write_wav(data, wav_file)\nif __name__ == \"__main__\":",
+        "detail": "csvtowav",
+        "documentation": {}
+    },
+    {
+        "label": "sampling_rate",
+        "kind": 5,
+        "importPath": "csvvswav",
+        "description": "csvvswav",
+        "peekOfCode": "sampling_rate = 44100\n# Signal frequency\nfrequency = 400\n# Signal duration (in seconds)\nduration = 5\n# Generate time array\nt = np.arange(0, duration, 1 / sampling_rate)\n# Generate signal\nsignal = np.sin(2 * np.pi * frequency * t)\n# Normalize signal",
+        "detail": "csvvswav",
+        "documentation": {}
+    },
+    {
+        "label": "frequency",
+        "kind": 5,
+        "importPath": "csvvswav",
+        "description": "csvvswav",
+        "peekOfCode": "frequency = 400\n# Signal duration (in seconds)\nduration = 5\n# Generate time array\nt = np.arange(0, duration, 1 / sampling_rate)\n# Generate signal\nsignal = np.sin(2 * np.pi * frequency * t)\n# Normalize signal\nsignal /= np.max(np.abs(signal))\n# Scale the signal to 16-bit range (-32768 to 32767)",
+        "detail": "csvvswav",
+        "documentation": {}
+    },
+    {
+        "label": "duration",
+        "kind": 5,
+        "importPath": "csvvswav",
+        "description": "csvvswav",
+        "peekOfCode": "duration = 5\n# Generate time array\nt = np.arange(0, duration, 1 / sampling_rate)\n# Generate signal\nsignal = np.sin(2 * np.pi * frequency * t)\n# Normalize signal\nsignal /= np.max(np.abs(signal))\n# Scale the signal to 16-bit range (-32768 to 32767)\nscaled_signal = np.int16(signal * 32767)\n# Save as WAV file",
+        "detail": "csvvswav",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "csvvswav",
+        "description": "csvvswav",
+        "peekOfCode": "t = np.arange(0, duration, 1 / sampling_rate)\n# Generate signal\nsignal = np.sin(2 * np.pi * frequency * t)\n# Normalize signal\nsignal /= np.max(np.abs(signal))\n# Scale the signal to 16-bit range (-32768 to 32767)\nscaled_signal = np.int16(signal * 32767)\n# Save as WAV file\nwavfile.write('sound_signal.wav', sampling_rate, scaled_signal)\n# Save as CSV file",
+        "detail": "csvvswav",
+        "documentation": {}
+    },
+    {
+        "label": "signal",
+        "kind": 5,
+        "importPath": "csvvswav",
+        "description": "csvvswav",
+        "peekOfCode": "signal = np.sin(2 * np.pi * frequency * t)\n# Normalize signal\nsignal /= np.max(np.abs(signal))\n# Scale the signal to 16-bit range (-32768 to 32767)\nscaled_signal = np.int16(signal * 32767)\n# Save as WAV file\nwavfile.write('sound_signal.wav', sampling_rate, scaled_signal)\n# Save as CSV file\ncsv_data = np.column_stack((t, signal))\nwith open('sound_signal.csv', 'w', newline='') as file:",
+        "detail": "csvvswav",
+        "documentation": {}
+    },
+    {
+        "label": "scaled_signal",
+        "kind": 5,
+        "importPath": "csvvswav",
+        "description": "csvvswav",
+        "peekOfCode": "scaled_signal = np.int16(signal * 32767)\n# Save as WAV file\nwavfile.write('sound_signal.wav', sampling_rate, scaled_signal)\n# Save as CSV file\ncsv_data = np.column_stack((t, signal))\nwith open('sound_signal.csv', 'w', newline='') as file:\n    writer = csv.writer(file)\n    writer.writerows(csv_data)",
+        "detail": "csvvswav",
+        "documentation": {}
+    },
+    {
+        "label": "csv_data",
+        "kind": 5,
+        "importPath": "csvvswav",
+        "description": "csvvswav",
+        "peekOfCode": "csv_data = np.column_stack((t, signal))\nwith open('sound_signal.csv', 'w', newline='') as file:\n    writer = csv.writer(file)\n    writer.writerows(csv_data)",
+        "detail": "csvvswav",
+        "documentation": {}
+    },
+    {
+        "label": "record_name",
+        "kind": 5,
+        "importPath": "extractexcg copy",
+        "description": "extractexcg copy",
+        "peekOfCode": "record_name = '103'  # Replace with the actual record name (without file extension)\nrecord = wfdb.rdrecord(record_name)\n# Extract ECG signal\necg_signal = record.p_signal.flatten()\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))\n# Scale the signal to 16-bit range (-32768 to 32767)\nscaled_signal = np.int16(ecg_signal * 32767)\nnp.savetxt('ecg_signal.csv', ecg_signal, delimiter=',')\n# Save as WAV file",
+        "detail": "extractexcg copy",
+        "documentation": {}
+    },
+    {
+        "label": "record",
+        "kind": 5,
+        "importPath": "extractexcg copy",
+        "description": "extractexcg copy",
+        "peekOfCode": "record = wfdb.rdrecord(record_name)\n# Extract ECG signal\necg_signal = record.p_signal.flatten()\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))\n# Scale the signal to 16-bit range (-32768 to 32767)\nscaled_signal = np.int16(ecg_signal * 32767)\nnp.savetxt('ecg_signal.csv', ecg_signal, delimiter=',')\n# Save as WAV file\nwavfile.write('ecg_signal.wav', record.fs, scaled_signal)",
+        "detail": "extractexcg copy",
+        "documentation": {}
+    },
+    {
+        "label": "ecg_signal",
+        "kind": 5,
+        "importPath": "extractexcg copy",
+        "description": "extractexcg copy",
+        "peekOfCode": "ecg_signal = record.p_signal.flatten()\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))\n# Scale the signal to 16-bit range (-32768 to 32767)\nscaled_signal = np.int16(ecg_signal * 32767)\nnp.savetxt('ecg_signal.csv', ecg_signal, delimiter=',')\n# Save as WAV file\nwavfile.write('ecg_signal.wav', record.fs, scaled_signal)",
+        "detail": "extractexcg copy",
+        "documentation": {}
+    },
+    {
+        "label": "scaled_signal",
+        "kind": 5,
+        "importPath": "extractexcg copy",
+        "description": "extractexcg copy",
+        "peekOfCode": "scaled_signal = np.int16(ecg_signal * 32767)\nnp.savetxt('ecg_signal.csv', ecg_signal, delimiter=',')\n# Save as WAV file\nwavfile.write('ecg_signal.wav', record.fs, scaled_signal)",
+        "detail": "extractexcg copy",
+        "documentation": {}
+    },
+    {
+        "label": "record_name",
+        "kind": 5,
+        "importPath": "extractexcg",
+        "description": "extractexcg",
+        "peekOfCode": "record_name = '201'  # Replace with the actual record name (without file extension)\nrecord = wfdb.rdrecord(record_name)\n# Extract ECG signal\necg_signal = record.p_signal.flatten()\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))\n# Scale the signal to 16-bit range (-32768 to 32767)\nscaled_signal = np.int16(ecg_signal * 32767)\nnp.savetxt('ecg_signal.csv', ecg_signal, delimiter=',')\n# Save as WAV file",
+        "detail": "extractexcg",
+        "documentation": {}
+    },
+    {
+        "label": "record",
+        "kind": 5,
+        "importPath": "extractexcg",
+        "description": "extractexcg",
+        "peekOfCode": "record = wfdb.rdrecord(record_name)\n# Extract ECG signal\necg_signal = record.p_signal.flatten()\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))\n# Scale the signal to 16-bit range (-32768 to 32767)\nscaled_signal = np.int16(ecg_signal * 32767)\nnp.savetxt('ecg_signal.csv', ecg_signal, delimiter=',')\n# Save as WAV file\nwavfile.write('ecg_signal.wav', record.fs, scaled_signal)",
+        "detail": "extractexcg",
+        "documentation": {}
+    },
+    {
+        "label": "ecg_signal",
+        "kind": 5,
+        "importPath": "extractexcg",
+        "description": "extractexcg",
+        "peekOfCode": "ecg_signal = record.p_signal.flatten()\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))\n# Scale the signal to 16-bit range (-32768 to 32767)\nscaled_signal = np.int16(ecg_signal * 32767)\nnp.savetxt('ecg_signal.csv', ecg_signal, delimiter=',')\n# Save as WAV file\nwavfile.write('ecg_signal.wav', record.fs, scaled_signal)",
+        "detail": "extractexcg",
+        "documentation": {}
+    },
+    {
+        "label": "scaled_signal",
+        "kind": 5,
+        "importPath": "extractexcg",
+        "description": "extractexcg",
+        "peekOfCode": "scaled_signal = np.int16(ecg_signal * 32767)\nnp.savetxt('ecg_signal.csv', ecg_signal, delimiter=',')\n# Save as WAV file\nwavfile.write('ecg_signal.wav', record.fs, scaled_signal)",
+        "detail": "extractexcg",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "plotcsv",
+        "description": "plotcsv",
+        "peekOfCode": "df = pd.read_csv('ecg_signal.csv', header=None, names=['Amplitude'])\n# Create the animated plot\nfig = go.Figure(\n    data=go.Scatter(x=df.index, y=df['Amplitude'], mode='lines'),\n    layout=go.Layout(\n        title='ECG Signal',\n        xaxis=dict(title='Time'),\n        yaxis=dict(title='Amplitude'),\n    ),\n    frames=[go.Frame(data=[go.Scatter(x=df.index[:i+1], y=df['Amplitude'][:i+1], mode='lines')]) for i in range(len(df))]",
+        "detail": "plotcsv",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "plotcsv",
+        "description": "plotcsv",
+        "peekOfCode": "fig = go.Figure(\n    data=go.Scatter(x=df.index, y=df['Amplitude'], mode='lines'),\n    layout=go.Layout(\n        title='ECG Signal',\n        xaxis=dict(title='Time'),\n        yaxis=dict(title='Amplitude'),\n    ),\n    frames=[go.Frame(data=[go.Scatter(x=df.index[:i+1], y=df['Amplitude'][:i+1], mode='lines')]) for i in range(len(df))]\n)\n# Set animation duration and mode",
+        "detail": "plotcsv",
+        "documentation": {}
+    },
+    {
+        "label": "sampling_rate",
+        "kind": 5,
+        "importPath": "syntheticecg",
+        "description": "syntheticecg",
+        "peekOfCode": "sampling_rate = 44100  # Adjust as desired\nduration = 10  # Duration in seconds\n# Generate time axis\nt = np.linspace(0, duration, int(sampling_rate * duration), endpoint=False)\n# Generate synthetic ECG signal with noise\necg_signal = np.sin(2 * np.pi * 1.0 * t) + 0.5 * np.sin(2 * np.pi * 0.2 * t)\n# Amplify the signal\namplification_factor = 50\necg_signal *= amplification_factor\n# Normalize signal",
+        "detail": "syntheticecg",
+        "documentation": {}
+    },
+    {
+        "label": "duration",
+        "kind": 5,
+        "importPath": "syntheticecg",
+        "description": "syntheticecg",
+        "peekOfCode": "duration = 10  # Duration in seconds\n# Generate time axis\nt = np.linspace(0, duration, int(sampling_rate * duration), endpoint=False)\n# Generate synthetic ECG signal with noise\necg_signal = np.sin(2 * np.pi * 1.0 * t) + 0.5 * np.sin(2 * np.pi * 0.2 * t)\n# Amplify the signal\namplification_factor = 50\necg_signal *= amplification_factor\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))",
+        "detail": "syntheticecg",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "syntheticecg",
+        "description": "syntheticecg",
+        "peekOfCode": "t = np.linspace(0, duration, int(sampling_rate * duration), endpoint=False)\n# Generate synthetic ECG signal with noise\necg_signal = np.sin(2 * np.pi * 1.0 * t) + 0.5 * np.sin(2 * np.pi * 0.2 * t)\n# Amplify the signal\namplification_factor = 50\necg_signal *= amplification_factor\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))\n# Convert to int16\necg_signal_int16 = (ecg_signal * 32767).astype(np.int16)",
+        "detail": "syntheticecg",
+        "documentation": {}
+    },
+    {
+        "label": "ecg_signal",
+        "kind": 5,
+        "importPath": "syntheticecg",
+        "description": "syntheticecg",
+        "peekOfCode": "ecg_signal = np.sin(2 * np.pi * 1.0 * t) + 0.5 * np.sin(2 * np.pi * 0.2 * t)\n# Amplify the signal\namplification_factor = 50\necg_signal *= amplification_factor\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))\n# Convert to int16\necg_signal_int16 = (ecg_signal * 32767).astype(np.int16)\n# Save as .wav file\nwavfile.write('synth_ecg_signal.wav', sampling_rate, ecg_signal_int16)",
+        "detail": "syntheticecg",
+        "documentation": {}
+    },
+    {
+        "label": "amplification_factor",
+        "kind": 5,
+        "importPath": "syntheticecg",
+        "description": "syntheticecg",
+        "peekOfCode": "amplification_factor = 50\necg_signal *= amplification_factor\n# Normalize signal\necg_signal /= np.max(np.abs(ecg_signal))\n# Convert to int16\necg_signal_int16 = (ecg_signal * 32767).astype(np.int16)\n# Save as .wav file\nwavfile.write('synth_ecg_signal.wav', sampling_rate, ecg_signal_int16)\n# Plot the ECG signal\nplt.figure()",
+        "detail": "syntheticecg",
+        "documentation": {}
+    },
+    {
+        "label": "ecg_signal_int16",
+        "kind": 5,
+        "importPath": "syntheticecg",
+        "description": "syntheticecg",
+        "peekOfCode": "ecg_signal_int16 = (ecg_signal * 32767).astype(np.int16)\n# Save as .wav file\nwavfile.write('synth_ecg_signal.wav', sampling_rate, ecg_signal_int16)\n# Plot the ECG signal\nplt.figure()\nplt.plot(t, ecg_signal)\nplt.xlabel('Time (s)')\nplt.ylabel('Amplitude')\nplt.title('Synthetic ECG Signal')\nplt.show()",
+        "detail": "syntheticecg",
+        "documentation": {}
+    }
+]
