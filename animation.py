@@ -1,26 +1,30 @@
 
-import random 
-import streamlit as st
-
-import numpy as np
-
-from scipy.io.wavfile import write
-from scipy.signal import find_peaks
+import io
+import os
+import random
 import wave
+
+import altair as alt
 import IPython.display as ipd
 import librosa
 import librosa.display
-
-
+import numpy as np
 import pandas as pd
-import altair as alt
 import pylab
-import os
+import streamlit as st
+from scipy.io.wavfile import write
+from scipy.signal import find_peaks
 
 
 class variabls :
     points_num =1000
     count=0
+
+
+
+
+
+
 
 
 # Plot a Chart
