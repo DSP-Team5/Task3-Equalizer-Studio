@@ -53,8 +53,7 @@ def bandLength(freq=[]):
         arr[i] = int(i * length_band)
 
     return arr, len(freq) / 10  #
-def Vowels(points_per_freq, sliders, frequencies, fourier_frequency):
-    vowel = ["sh", "M", "D", "R"]
+def modify_range(points_per_freq, sliders, frequencies, fourier_frequency):
     for i in range(len(frequencies)):
         # print(frequencies[i][i])
         for j in range(len(frequencies[i])):
@@ -94,9 +93,7 @@ def creating_new_slider(label):
             st.write(label[index])
     return sliders_values
 
-def load_signal(file_path):
-    sampling_rate, signal = wavfile.read(file_path)
-    return signal
+
 
 def read_audio(audio_file):
     obj = wave.open(audio_file, 'r')
@@ -109,29 +106,8 @@ def read_audio(audio_file):
     signal_x_axis = np.linspace(0, duration, len(signal_y_axis))
     return signal_x_axis, signal_y_axis, sample_rate,  sound_info
 
-def validate_file_type(file_name, allowed_types):
-    ext = os.path.splitext(file_name)[1][1:].lower()
-    return ext in allowed_types
-def apply_equalizer(signal, slider_values):
-    modified_signal = signal.copy()
-    # Implement the logic to modify the signal based on the slider values
-    # You can use libraries like scipy or create your own algorithm
-    return modified_signal
-def mode_conditions(mode, signal):
-    modified_signal = signal.copy()
-    if mode == "Normal":
-        # Implement Normal mode conditions
-        pass
-    elif mode == "Music":
-        # Implement Music mode conditions
-        pass
-    elif mode == "Vowels":
-        # Implement Vowels mode conditions
-        pass
-    elif mode == "Biological Abnormalities":
-        # Implement Biological Abnormalities mode conditions
-        pass
-    return modified_signal
+
+
 
 def welcome_screen():
     st.markdown(

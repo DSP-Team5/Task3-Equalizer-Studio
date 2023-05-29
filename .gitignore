@@ -4,3 +4,6 @@
 *.xws
 *.hea
 *.json
+mitdb/
+.vscode/
+__pycache__/
